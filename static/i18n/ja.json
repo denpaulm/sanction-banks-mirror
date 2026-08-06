@@ -1,0 +1,123 @@
+{
+ "title": "制裁ダッシュボード · ロシア銀行",
+ "subscribe": "更新通知を受け取る",
+ "status": {
+  "cbr_data": "ロシア中銀データ基準日 {date}",
+  "lists_checked": "リスト確認 {date}",
+  "monitor_off": "モニタリング：オフ",
+  "monitor_on": "モニタリング中 · {until}まで",
+  "assets_estimate": "総資産は推計値（101号様式）"
+ },
+ "cards": {
+  "total": "信用機関数",
+  "total_sub": "うち銀行: {n}",
+  "us": "制裁対象 · 米国",
+  "eu": "制裁対象 · EU",
+  "uk": "制裁対象 · 英国",
+  "jp": "制裁対象 · 日本",
+  "any": "制裁対象の資産割合",
+  "any_sub": "いずれかの法域",
+  "all4": "4法域すべて",
+  "assets_share": "資産の{pct}",
+  "more": "その他の切り口",
+  "recent30": "直近30日の新規指定",
+  "foreign_any": "外資系",
+  "foreign_jp": "日系",
+  "foreign_cn": "中国系",
+  "foreign_eu": "欧州系"
+ },
+ "controls": {
+  "search_placeholder": "銀行名・INN・BIC…",
+  "hide_nko": "非銀行信用機関を非表示",
+  "shown": "{total}件中{shown}件を表示"
+ },
+ "table": {
+  "num": "#",
+  "bank": "銀行",
+  "regn": "登録番号",
+  "assets": "総資産",
+  "capital": "自己資本",
+  "date": "基準日",
+  "nko_tag": "非銀行",
+  "no_data": "—",
+  "trend": "12ヶ月"
+ },
+ "detail": {
+  "full_name": "正式名称",
+  "regn": "登録番号",
+  "inn": "INN（納税者番号）",
+  "ogrn": "OGRN",
+  "bic": "BIC（露）",
+  "swift": "SWIFT",
+  "lic_type": "免許区分",
+  "address": "所在地",
+  "fin_block": "財務データ",
+  "assets_note": "総資産：中銀101号様式による純資産推計（基準日 {date}、方法論はSOURCES.md）",
+  "capital_note": "自己資本：中銀123号様式（バーゼルIII）合計（基準日 {date}）",
+  "fin_source": "中銀の機関カード →",
+  "no_sanctions": "4法域いずれの制裁対象でもありません",
+  "entry_link": "リスト記載 →",
+  "superseded": "初出（OJ官報の規則）、FSF収載により代替済み",
+  "method": "照合方法",
+  "designated": "指定日",
+  "sanctions_block": "制裁",
+  "clean_jur": "なし",
+  "foreign_group": "親グループ"
+ },
+ "methods": {
+  "bic": "SWIFT BICで照合",
+  "inn": "INN/OGRNで照合",
+  "name_exact": "名称完全一致",
+  "fuzzy_confirmed": "曖昧一致（確認済み）",
+  "manual": "手動照合"
+ },
+ "types": {
+  "sdn": {
+   "badge": "SDN",
+   "desc": "米国：完全ブロック。米国人によるすべての取引禁止"
+  },
+  "ssi": {
+   "badge": "SSI",
+   "desc": "米国：セクター別制裁（指令に基づく新規債務・株式の制限）"
+  },
+  "capta": {
+   "badge": "CAPTA",
+   "desc": "米国：コルレス口座の禁止・制限"
+  },
+  "eu_freeze": {
+   "badge": "Freeze",
+   "desc": "EU：資産凍結、資金提供の禁止"
+  },
+  "eu_capital": {
+   "badge": "CapMkt",
+   "desc": "EU：資本市場アクセス制限（規則833/2014）"
+  },
+  "uk_freeze": {
+   "badge": "Freeze",
+   "desc": "英国：資産凍結"
+  },
+  "uk_invban": {
+   "badge": "InvBan",
+   "desc": "英国：投資禁止"
+  },
+  "jp_freeze": {
+   "badge": "Freeze",
+   "desc": "日本：資産凍結等の措置。支払には財務省の許可が必要"
+  },
+  "jp_capital": {
+   "badge": "CapMkt",
+   "desc": "日本：証券の発行又は募集の禁止"
+  },
+  "eu_swift": {
+   "badge": "TranBan",
+   "desc": "EU：取引禁止（規則833/2014第5h条。当初はSWIFT遮断、その後拡大）"
+  }
+ },
+ "footer": {
+  "disclaimer": "情報提供ツールであり、法的助言ではありません。",
+  "sources": "データソース"
+ },
+ "units": {
+  "bln": "十億"
+ }
+}

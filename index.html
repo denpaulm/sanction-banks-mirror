@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' rx='3' fill='%232563EB'/><text x='8' y='12' font-size='10' fill='white' text-anchor='middle' font-family='sans-serif'>S</text></svg>">
+  <title>Санкционный дашборд · Банки РФ</title>
+  <link rel="stylesheet" href="./static/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-title" id="app-title">Санкционный дашборд · Банки РФ</div>
+    <div class="topbar-controls">
+      <div class="seg" id="currency-seg" role="group">
+        <button data-cur="RUB">₽</button>
+        <button data-cur="USD">$</button>
+        <button data-cur="JPY">¥</button>
+      </div>
+      <div class="seg" id="lang-seg" role="group">
+        <button data-lang="ru">RU</button>
+        <button data-lang="en">EN</button>
+        <button data-lang="ja">日本語</button>
+      </div>
+      <a class="tg-btn" id="tg-btn" href="#" target="_blank" rel="noopener" hidden>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.04 15.51 8.9 19.4c.4 0 .58-.17.79-.38l1.9-1.82 3.94 2.88c.72.4 1.24.19 1.43-.66l2.6-12.2c.23-1.05-.38-1.46-1.09-1.2L3.2 11.53c-1.04.4-1.02.98-.18 1.24l3.9 1.22 9.05-5.7c.43-.28.82-.13.5.15l-7.43 7.07Z"/></svg>
+        <span id="tg-btn-text"></span>
+      </a>
+    </div>
+  </header>
+
+  <div class="statusline" id="statusline"></div>
+
+  <main class="wrap">
+    <div class="cards" id="cards"></div>
+    <details class="more-views" id="more-views">
+      <summary id="more-summary"></summary>
+      <div class="chips" id="more-chips"></div>
+    </details>
+
+    <div class="controls">
+      <input class="search" id="search" type="search" autocomplete="off">
+      <label class="hide-nko"><input type="checkbox" id="hide-nko"><span id="hide-nko-label"></span></label>
+      <span class="counter" id="counter"></span>
+    </div>
+
+    <div class="table-wrap">
+      <table id="table">
+        <thead><tr id="thead-row"></tr></thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <span id="disclaimer"></span>
+    <a href="./sources.html" target="_blank" id="sources-link"></a>
+  </footer>
+
+  <div class="tooltip" id="tooltip" hidden></div>
+  <script type="module" src="./static/app.js"></script>
+</body>
+</html>

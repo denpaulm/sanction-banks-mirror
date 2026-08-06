@@ -1,0 +1,214 @@
+/* Дизайн-токены (§6 ТЗ). CSS-переменные — задел под тёмную тему. */
+@import url('fonts/inter.css');
+
+:root {
+  --bg: #FAFAF9;
+  --surface: #FFFFFF;
+  --border: #E7E5E4;
+  --text: #1C1917;
+  --text-secondary: #78716C;
+  --accent: #2563EB;
+  --hover: #F5F5F4;
+  --ok: #16A34A;
+  --amber: #D97706;
+  --red: #DC2626;
+  --orange: #EA580C;
+  --radius: 6px;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Inter", system-ui, -apple-system, "Hiragino Sans", "Yu Gothic", sans-serif;
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.wrap { max-width: 1440px; margin: 0 auto; padding: 0 16px; }
+
+/* ── Шапка ─────────────────────────────────────────────── */
+.topbar {
+  height: 48px;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 0 16px;
+}
+.topbar-title { font-weight: 600; font-size: 14px; white-space: nowrap; }
+.topbar-controls { display: flex; align-items: center; gap: 10px; flex-wrap: nowrap; }
+
+.seg {
+  display: inline-flex; border: 1px solid var(--border); border-radius: var(--radius);
+  overflow: hidden; background: var(--surface);
+}
+.seg button {
+  border: 0; background: none; padding: 5px 10px; cursor: pointer;
+  font: inherit; color: var(--text-secondary); border-right: 1px solid var(--border);
+}
+.seg button:last-child { border-right: 0; }
+.seg button.active { background: var(--accent); color: #fff; }
+.seg button:not(.active):hover { background: var(--hover); }
+
+.tg-btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 5px 10px; color: var(--accent); white-space: nowrap;
+}
+.tg-btn:hover { background: var(--hover); text-decoration: none; }
+
+/* ── Строка статуса ────────────────────────────────────── */
+.statusline {
+  min-height: 28px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+  padding: 3px 16px; color: var(--text-secondary); font-size: 12px;
+  border-bottom: 1px solid var(--border);
+}
+.statusline .dot-sep::before { content: "·"; margin: 0 2px; }
+.monitor-on { color: var(--accent); font-weight: 600; }
+
+/* ── Сводные карточки ──────────────────────────────────── */
+.cards {
+  display: grid; grid-template-columns: repeat(7, 1fr); gap: 8px;
+  margin: 12px 0 4px;
+}
+.card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  min-height: 76px; padding: 10px 12px; cursor: pointer; text-align: left;
+  font: inherit; color: inherit; display: flex; flex-direction: column; justify-content: space-between;
+}
+.card:hover { background: var(--hover); }
+.card.active { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
+.card-label { font-size: 11px; color: var(--text-secondary); line-height: 1.25; }
+.card-value { font-size: 20px; font-weight: 600; line-height: 1.1; }
+.card-sub { font-size: 11px; color: var(--text-secondary); }
+
+.more-views { margin: 4px 0; font-size: 12px; }
+.more-views summary { color: var(--text-secondary); cursor: pointer; user-select: none; }
+.more-views .chips { display: flex; gap: 8px; padding: 8px 0 2px; flex-wrap: wrap; }
+.chip {
+  border: 1px solid var(--border); border-radius: 999px; background: var(--surface);
+  padding: 3px 12px; cursor: pointer; font: inherit; font-size: 12px; color: var(--text);
+}
+.chip:hover { background: var(--hover); }
+.chip.active { border-color: var(--accent); color: var(--accent); font-weight: 600; }
+
+/* ── Панель управления ─────────────────────────────────── */
+.controls {
+  display: flex; align-items: center; gap: 16px; height: 44px; margin: 4px 0;
+}
+.search {
+  flex: 0 1 340px; padding: 6px 10px; font: inherit;
+  border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface);
+}
+.search:focus { outline: 2px solid var(--accent); outline-offset: -1px; border-color: var(--accent); }
+.hide-nko { display: flex; align-items: center; gap: 6px; cursor: pointer; user-select: none; }
+.hide-nko input { accent-color: var(--accent); }
+.counter { margin-left: auto; color: var(--text-secondary); font-size: 12px; white-space: nowrap; }
+
+/* ── Таблица ───────────────────────────────────────────── */
+.table-wrap {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  overflow-x: auto; margin-bottom: 16px;
+}
+table { border-collapse: collapse; width: 100%; }
+thead th {
+  position: sticky; top: 0; z-index: 2; background: var(--surface);
+  font-size: 11px; font-weight: 600; color: var(--text-secondary); text-transform: none;
+  padding: 8px; border-bottom: 1px solid var(--border); white-space: nowrap;
+  cursor: pointer; user-select: none; text-align: left;
+}
+thead th.num, tbody td.num { text-align: right; }
+thead th:hover { color: var(--text); }
+thead th.sorted { color: var(--accent); }
+th .arrow { font-size: 9px; margin-left: 2px; }
+
+tbody td {
+  height: 32px; padding: 4px 8px; border-bottom: 1px solid var(--border);
+  white-space: nowrap; vertical-align: middle;
+}
+tbody tr.bank-row { cursor: pointer; }
+tbody tr.bank-row:hover td { background: var(--hover); }
+tbody tr.bank-row.open td { background: var(--hover); }
+
+td.col-bank, th.col-bank {
+  position: sticky; left: 0; z-index: 1; background: var(--surface);
+  max-width: 320px; overflow: hidden; text-overflow: ellipsis;
+}
+tbody tr.bank-row:hover td.col-bank, tbody tr.bank-row.open td.col-bank { background: var(--hover); }
+thead th.col-bank { z-index: 3; }
+
+.clean-mark {
+  display: inline-block; width: 7px; height: 7px; border-radius: 50%;
+  background: var(--ok); margin-right: 7px; vertical-align: 0;
+}
+.nko-suffix {
+  color: var(--text-secondary); font-size: 10px; border: 1px solid var(--border);
+  border-radius: 3px; padding: 0 4px; margin-left: 6px; vertical-align: 1px;
+}
+.col-idx { color: var(--text-secondary); width: 34px; text-align: right; }
+.col-trend { width: 70px; }
+.spark polyline { fill: none; stroke: var(--text-secondary); stroke-width: 1.2; opacity: .8; }
+.spark.spark-up polyline { stroke: var(--ok); }
+.spark.spark-down polyline { stroke: var(--red); }
+.col-regn { color: var(--text-secondary); }
+.col-date { color: var(--text-secondary); font-size: 12px; }
+.stale-dot {
+  display: inline-block; width: 6px; height: 6px; border-radius: 50%;
+  background: var(--amber); margin-left: 5px; vertical-align: 1px;
+}
+
+/* Бейджи */
+.badges { display: flex; gap: 4px; flex-wrap: nowrap; }
+.badge {
+  display: inline-block; font-size: 10px; font-weight: 600; color: #fff;
+  border-radius: 4px; padding: 1px 6px 2px; cursor: default; line-height: 1.4;
+}
+.badge.b-red { background: var(--red); }
+.badge.b-amber { background: var(--amber); }
+.badge.b-orange { background: var(--orange); }
+.clean-cell { color: #D6D3D1; }
+
+/* Тултип */
+.tooltip {
+  position: fixed; z-index: 50; max-width: 300px;
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  box-shadow: 0 4px 16px rgba(0,0,0,.10);
+  padding: 8px 10px; font-size: 12px; line-height: 1.45;
+}
+.tooltip .tt-date { color: var(--text-secondary); margin-top: 2px; }
+
+/* Детальная панель */
+tr.detail-row > td {
+  background: #FCFCFB; padding: 14px 16px 16px; white-space: normal;
+}
+.detail-grid { display: grid; grid-template-columns: 340px 1fr; gap: 20px; }
+.detail-req div { margin-bottom: 4px; }
+.detail-req .lbl { color: var(--text-secondary); display: inline-block; min-width: 130px; }
+.detail-fin { margin-top: 10px; color: var(--text-secondary); font-size: 12px; line-height: 1.5; }
+.detail-h { font-weight: 600; margin-bottom: 8px; }
+.jur-block { margin-bottom: 10px; }
+.jur-block .jur-name { font-weight: 600; margin-right: 6px; }
+.jur-entry { margin: 3px 0 3px 8px; }
+.jur-entry .meta { color: var(--text-secondary); font-size: 12px; }
+.no-sanctions { color: var(--ok); font-weight: 600; }
+
+/* ── Подвал ────────────────────────────────────────────── */
+.footer {
+  padding: 12px 16px 24px; color: var(--text-secondary); font-size: 12px;
+  display: flex; gap: 16px; flex-wrap: wrap;
+}
+
+/* ── Узкие экраны: не разваливаться (§6) ───────────────── */
+@media (max-width: 900px) {
+  .cards { grid-template-columns: repeat(4, 1fr); }
+  .topbar { height: auto; flex-wrap: wrap; padding: 8px 16px; }
+  .controls { flex-wrap: wrap; height: auto; }
+  .detail-grid { grid-template-columns: 1fr; }
+}

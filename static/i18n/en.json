@@ -1,0 +1,123 @@
+{
+ "title": "Sanctions Dashboard · Russian Banks",
+ "subscribe": "Get updates",
+ "status": {
+  "cbr_data": "CBR data as of {date}",
+  "lists_checked": "Lists checked {date}",
+  "monitor_off": "Monitoring: off",
+  "monitor_on": "Monitoring active · until {until}",
+  "assets_estimate": "assets are estimates (form 101)"
+ },
+ "cards": {
+  "total": "Credit institutions",
+  "total_sub": "banks: {n}",
+  "us": "Sanctioned · US",
+  "eu": "Sanctioned · EU",
+  "uk": "Sanctioned · UK",
+  "jp": "Sanctioned · JP",
+  "any": "Assets under sanctions",
+  "any_sub": "any jurisdiction",
+  "all4": "Under all four",
+  "assets_share": "{pct} of assets",
+  "more": "More views",
+  "recent30": "New in 30 days",
+  "foreign_any": "Foreign-owned",
+  "foreign_jp": "Japanese",
+  "foreign_cn": "Chinese",
+  "foreign_eu": "European"
+ },
+ "controls": {
+  "search_placeholder": "Name, INN, BIC…",
+  "hide_nko": "Hide NBCOs",
+  "shown": "Showing {shown} of {total}"
+ },
+ "table": {
+  "num": "#",
+  "bank": "Bank",
+  "regn": "Reg. no.",
+  "assets": "Assets",
+  "capital": "Capital",
+  "date": "As of",
+  "nko_tag": "NBCO",
+  "no_data": "—",
+  "trend": "12 mo"
+ },
+ "detail": {
+  "full_name": "Full name",
+  "regn": "Registration number",
+  "inn": "INN (tax ID)",
+  "ogrn": "OGRN",
+  "bic": "BIC (RU)",
+  "swift": "SWIFT",
+  "lic_type": "Status",
+  "address": "Address",
+  "fin_block": "Financials",
+  "assets_note": "Assets: net assets estimate from CBR form 0409101 as of {date} (methodology — SOURCES.md)",
+  "capital_note": "Capital: CBR form 0409123 (Basel III), total, as of {date}",
+  "fin_source": "CBR institution card →",
+  "no_sanctions": "Not sanctioned in any of the four jurisdictions",
+  "entry_link": "list entry →",
+  "superseded": "initial publication (OJ act), superseded by the FSF entry",
+  "method": "method",
+  "designated": "designated",
+  "sanctions_block": "Sanctions",
+  "clean_jur": "none",
+  "foreign_group": "Parent group"
+ },
+ "methods": {
+  "bic": "by SWIFT BIC",
+  "inn": "by INN/OGRN",
+  "name_exact": "by name (exact)",
+  "fuzzy_confirmed": "fuzzy, confirmed",
+  "manual": "manual match"
+ },
+ "types": {
+  "sdn": {
+   "badge": "SDN",
+   "desc": "US: full blocking; all dealings by US persons prohibited"
+  },
+  "ssi": {
+   "badge": "SSI",
+   "desc": "US: sectoral restrictions (new debt/equity under directives)"
+  },
+  "capta": {
+   "badge": "CAPTA",
+   "desc": "US: correspondent account prohibitions/restrictions"
+  },
+  "eu_freeze": {
+   "badge": "Freeze",
+   "desc": "EU: asset freeze; prohibition on making funds available"
+  },
+  "eu_capital": {
+   "badge": "CapMkt",
+   "desc": "EU: capital market access restrictions (Reg. 833/2014)"
+  },
+  "uk_freeze": {
+   "badge": "Freeze",
+   "desc": "UK: asset freeze"
+  },
+  "uk_invban": {
+   "badge": "InvBan",
+   "desc": "UK: investment ban"
+  },
+  "jp_freeze": {
+   "badge": "Freeze",
+   "desc": "JP: asset freeze; payments require MOF approval"
+  },
+  "jp_capital": {
+   "badge": "CapMkt",
+   "desc": "JP: securities issuance restrictions"
+  },
+  "eu_swift": {
+   "badge": "TranBan",
+   "desc": "EU: transaction ban — all transactions prohibited (Art. 5h, Reg. 833/2014; originally a SWIFT ban, later broadened)"
+  }
+ },
+ "footer": {
+  "disclaimer": "Informational tool; not a legal opinion.",
+  "sources": "Sources"
+ },
+ "units": {
+  "bln": "bn"
+ }
+}

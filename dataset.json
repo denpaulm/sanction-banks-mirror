@@ -15703,7 +15703,20 @@
    "sanctions": {
     "EU": [],
     "JP": [],
-    "UK": [],
+    "UK": [
+     {
+      "dates": {
+       "uk_freeze": "2026-10-08"
+      },
+      "entry_id": "RUS3753",
+      "entry_name": "LIMITED LIABILITY COMPANY COMMERCIAL BANK \"STOLICHNY KREDIT\"",
+      "method": "inn",
+      "source_url": "https://search-uk-sanctions-list.service.gov.uk/?searchTerm=RUS3753",
+      "types": [
+       "uk_freeze"
+      ]
+     }
+    ],
     "US": []
    },
    "swift": "CINGRUMMXXX"
@@ -32688,12 +32701,12 @@
    "USD": 86.3793,
    "date": "2026-09-01"
   },
-  "generated_at": "2026-09-25T17:27:07+00:00",
+  "generated_at": "2026-10-12T09:26:36+00:00",
   "list_dates": {
-   "EU": "FSF 2026-09-22T20:01:34.799+02:00; 833/2014 02014R0833-20260724 + 1 amend.",
-   "JP": "2026-09-25T17:13:05+00:00",
-   "UK": "21/09/2026",
-   "US": "09/23/2026"
+   "EU": "FSF 2026-09-22T20:01:34.799+02:00 (прошлый снапшот); 833/2014 02014R0833-20260724 + 1 amend.",
+   "JP": "2026-10-12T09:11:44+00:00",
+   "UK": "08/10/2026",
+   "US": "10/09/2026"
   },
   "report_date": "2026-09-01"
  },
@@ -32704,7 +32717,7 @@
   },
   "any_sanctions": {
    "assets_share": 0.9583,
-   "count": 147
+   "count": 148
   },
   "banks": 301,
   "nko": 57,
@@ -32719,14 +32732,22 @@
    },
    "UK": {
     "assets_share": 0.8792,
-    "count": 45
+    "count": 46
    },
    "US": {
     "assets_share": 0.9422,
     "count": 108
    }
   },
-  "recent_30d": [],
+  "recent_30d": [
+   {
+    "date": "2026-10-08",
+    "jurisdiction": "UK",
+    "name": "ООО КБ \"Столичный Кредит\"",
+    "regn": 2853,
+    "type": "uk_freeze"
+   }
+  ],
   "total": 358
  }
 }

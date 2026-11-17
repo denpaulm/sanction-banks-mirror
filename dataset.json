@@ -9786,7 +9786,7 @@
       },
       "entry_id": "EU.14621.74",
       "entry_name": "Banca Standardul Rus S.A.",
-      "method": "name_exact",
+      "method": "inn",
       "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202601845",
       "types": [
        "eu_freeze"
@@ -16706,6 +16706,18 @@
       "types": [
        "sdn"
       ]
+     },
+     {
+      "dates": {
+       "ssi": "2015-07-30"
+      },
+      "entry_id": "18298",
+      "entry_name": "OJSC RUSSIAN REGIONAL DEVELOPMENT BANK",
+      "method": "name_exact",
+      "source_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=18298",
+      "types": [
+       "ssi"
+      ]
      }
     ]
    },
@@ -18053,12 +18065,13 @@
      },
      {
       "dates": {
-       "eu_freeze": "2026-07-23"
+       "eu_freeze": "2026-06-09"
       },
       "entry_id": "269-1843-jsc-moskommertsbank",
       "entry_name": "JSC Moskommertsbank",
       "method": "inn",
       "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R1843",
+      "superseded_by": "EU.14695.47",
       "types": [
        "eu_freeze"
       ]
@@ -20872,7 +20885,7 @@
       },
       "entry_id": "EU.14620.75",
       "entry_name": "Banca Levoberezhny, societate publică pe acțiuni",
-      "method": "name_exact",
+      "method": "inn",
       "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202601845",
       "types": [
        "eu_freeze"
@@ -22260,7 +22273,7 @@
       },
       "entry_id": "EU.14624.71",
       "entry_name": "Blanc bank LLC",
-      "method": "name_exact",
+      "method": "inn",
       "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202601845",
       "types": [
        "eu_freeze"
@@ -24727,7 +24740,7 @@
       },
       "entry_id": "EU.14622.73",
       "entry_name": "PJSC Ural Bank For Reconstruction And Development",
-      "method": "name_exact",
+      "method": "inn",
       "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202601845",
       "types": [
        "eu_freeze"
@@ -26546,8 +26559,21 @@
       },
       "entry_id": "EU.14623.72",
       "entry_name": "Wildberries Bank LLC",
-      "method": "name_exact",
+      "method": "inn",
       "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202601845",
+      "types": [
+       "eu_freeze"
+      ]
+     },
+     {
+      "dates": {
+       "eu_freeze": "2026-07-23"
+      },
+      "entry_id": "269-1843-wildberries-bank-llc",
+      "entry_name": "Wildberries Bank LLC",
+      "method": "name_exact",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R1843",
+      "superseded_by": "EU.14623.72",
       "types": [
        "eu_freeze"
       ]
@@ -33326,12 +33352,18 @@
    "USD": 83.5588,
    "date": "2026-10-01"
   },
-  "generated_at": "2026-11-17T19:35:14+00:00",
+  "generated_at": "2026-11-17T20:36:24+00:00",
   "list_dates": {
    "EU": "FSF 2026-10-23T17:05:43.888+02:00; 833/2014 02014R0833-20260724 + 1 amend.",
-   "JP": "2026-11-17T19:32:20+00:00",
+   "JP": "2026-11-05",
    "UK": "17/11/2026",
    "US": "11/13/2026"
+  },
+  "list_dates_iso": {
+   "EU": "2026-10-23",
+   "JP": "2026-11-05",
+   "UK": "2026-11-17",
+   "US": "2026-11-13"
   },
   "report_date": "2026-10-01"
  },

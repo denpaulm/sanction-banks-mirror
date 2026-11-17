@@ -3,10 +3,12 @@
  "subscribe": "Получать обновления",
  "status": {
   "cbr_data": "Отчётность ЦБ на {date}",
+  "list_dates": "Даты списков: {dates}",
   "lists_checked": "Списки проверены {date}",
-  "monitor_off": "Мониторинг: выкл",
-  "monitor_on": "Мониторинг активен · до {until}",
   "assets_estimate": "активы — оценка по ф.101"
+ },
+ "errors": {
+  "load": "Ошибка загрузки данных: {error}"
  },
  "cards": {
   "total": "Всего КО",

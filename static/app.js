@@ -10,12 +10,27 @@ const BADGE_COLOR = {
   uk_invban: "b-amber", jp_capital: "b-amber",
 };
 const LOCALES = { ru: "ru-RU", en: "en-US", ja: "ja-JP" };
+const CUR_SYMBOL = { RUB: "₽", USD: "$", JPY: "¥" };
+// свой ключ объекта, не унаследованный ("constructor", "__proto__" из данных — мимо)
+const has = (obj, key) => Object.prototype.hasOwnProperty.call(obj, key);
+
+// Сохранённый выбор — только из известных значений (язык идёт в адрес словаря);
+// localStorage бывает недоступен (запрет данных сайтов) — тогда без памяти о выборе.
+function stored(key, allowed, fallback) {
+  try {
+    const v = localStorage.getItem(key);
+    return v !== null && has(allowed, v) ? v : fallback;
+  } catch { return fallback; }
+}
+function remember(key, value) {
+  try { localStorage.setItem(key, value); } catch { /* выбор не запомнится */ }
+}
 
 const state = {
   data: null,
   dict: {},
-  lang: localStorage.getItem("sb_lang") || "ru",
-  currency: localStorage.getItem("sb_cur") || "RUB",
+  lang: stored("sb_lang", LOCALES, "ru"),
+  currency: stored("sb_cur", CUR_SYMBOL, "RUB"),
   sort: { key: "assets", dir: -1 },
   filter: null,          // null | US | EU | UK | JP | any | all4 | recent30
   query: "",
@@ -24,14 +39,39 @@ const state = {
 };
 
 const $ = (id) => document.getElementById(id);
+// Всё, что идёт в innerHTML из данных (списки, реквизиты ЦБ, даты), — только через esc()
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g,
   (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+// Ссылки из данных — только http(s): javascript:/data: в href выполнились бы по клику
+function safeHref(url) {
+  if (typeof url !== "string" || !url) return null;
+  try {
+    const u = new URL(url);
+    return u.protocol === "http:" || u.protocol === "https:" ? u.href : null;
+  } catch { return null; }
+}
+
+// Ссылка на источник; адрес с другой схемой (или не адрес) — текстом, без ссылки
+function linkHtml(url, label) {
+  const href = safeHref(url);
+  if (href) return `<a href="${esc(href)}" target="_blank" rel="noopener">${esc(label)}</a>`;
+  return url ? `<span class="raw-url">${esc(url)}</span>` : "";
+}
+
+const badgeClass = (tp) => (has(BADGE_COLOR, tp) ? BADGE_COLOR[tp] : "b-amber");
 
 function t(path, params = {}) {
   let cur = state.dict;
   for (const p of path.split(".")) cur = cur?.[p];
   if (typeof cur !== "string") return path;
   return cur.replace(/\{(\w+)\}/g, (_, k) => params[k] ?? "");
+}
+
+// Тип лицензии ЦБ приходит по-русски; перевод — в словаре (lic_types), неизвестный — как есть
+function licType(v) {
+  const tr = state.dict.lic_types;
+  return tr && typeof v === "string" && has(tr, v) ? tr[v] : v;
 }
 
 /* ── форматирование ─────────────────────────────────────── */
@@ -141,9 +181,11 @@ function applyChrome() {
   document.title = t("title");
   $("app-title").textContent = t("title");
   $("tg-btn-text").textContent = t("subscribe");
-  const invite = state.data.meta.telegram_invite;
+  // приглашения нет (зеркало, не задано на сервере) — кнопки нет совсем
+  const invite = safeHref(state.data.meta.telegram_invite);
   $("tg-btn").hidden = !invite;
   if (invite) $("tg-btn").href = invite;
+  else $("tg-btn").removeAttribute("href");
   $("search").placeholder = t("controls.search_placeholder");
   $("hide-nko-label").textContent = t("controls.hide_nko");
   $("disclaimer").textContent = t("footer.disclaimer");
@@ -157,21 +199,21 @@ function applyChrome() {
 
 function renderStatus() {
   const m = state.data.meta;
-  const parts = [];
-  parts.push(esc(t("status.cbr_data", { date: fmtDate(m.report_date) })));
+  const parts = [t("status.cbr_data", { date: fmtDate(m.report_date) })];
+  // Даты самих списков (FSF отстаёт от сборки на недели), а не время сборки датасета.
+  // Старый датасет без поля (до первого цикла с новым кодом) — без этой части.
+  const ld = m.list_dates_iso;
+  if (ld) parts.push(t("status.list_dates", {
+    dates: JURS.map((j) => `${j} ${ld[j] ? fmtDate(ld[j]) : t("table.no_data")}`).join(", "),
+  }));
   const gen = m.generated_at ? new Date(m.generated_at) : null;
-  if (gen) parts.push(esc(t("status.lists_checked", {
+  if (gen) parts.push(t("status.lists_checked", {
     date: gen.toLocaleString(LOCALES[state.lang], { day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" }),
-  })));
-  parts.push(esc(t("status.assets_estimate")));
-  const until = m.watch_until ? new Date(m.watch_until) : null;
-  if (until && until > new Date()) {
-    parts.push(`<span class="monitor-on">${esc(t("status.monitor_on", {
-      until: until.toLocaleString(LOCALES[state.lang], { day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" }) }))}</span>`);
-  } else {
-    parts.push(esc(t("status.monitor_off")));
-  }
-  $("statusline").innerHTML = parts.join('<span class="dot-sep"></span>');
+  }));
+  parts.push(t("status.assets_estimate"));
+  // «Мониторинг: выкл» больше не показываем: режима /watch нет, регуляторов опрашивают
+  // постоянно (watch_until в датасет не попадает), строка вводила в заблуждение
+  $("statusline").innerHTML = parts.map((p) => `<span class="st-part">${esc(p)}</span>`).join("");
 }
 
 function cardDef() {
@@ -212,7 +254,6 @@ function renderCards() {
 
 /* ── рендер: таблица ────────────────────────────────────── */
 
-const CUR_SYMBOL = { RUB: "₽", USD: "$", JPY: "¥" };
 const unitSuffix = () => `, ${t("units.bln")} ${CUR_SYMBOL[state.currency]}`;
 
 const COLUMNS = [
@@ -230,7 +271,7 @@ function renderHead() {
   $("thead-row").innerHTML = COLUMNS.map((c) => {
     const sorted = state.sort.key === c.key && c.key;
     const arrow = sorted ? `<span class="arrow">${state.sort.dir > 0 ? "▲" : "▼"}</span>` : "";
-    return `<th class="${c.cls} ${sorted ? "sorted" : ""}" data-sort="${c.key ?? ""}">${c.label()}${arrow}</th>`;
+    return `<th class="${c.cls} ${sorted ? "sorted" : ""}" data-sort="${c.key ?? ""}">${esc(c.label())}${arrow}</th>`;
   }).join("");
 }
 
@@ -243,7 +284,7 @@ function badgeHtml(b, jur) {
     for (const tp of s.types) {
       if (seen.has(tp)) continue;
       seen.add(tp);
-      parts.push(`<span class="badge ${BADGE_COLOR[tp] || "b-amber"}" data-regn="${b.regn}" data-jur="${jur}" data-si="${si}" data-type="${tp}">${esc(t("types." + tp + ".badge"))}</span>`);
+      parts.push(`<span class="badge ${badgeClass(tp)}" data-regn="${esc(b.regn)}" data-jur="${jur}" data-si="${si}" data-type="${esc(tp)}">${esc(t("types." + tp + ".badge"))}</span>`);
     }
   });
   return `<div class="badges">${parts.join("")}</div>`;
@@ -273,37 +314,39 @@ function sparklineHtml(b) {
       maximumFractionDigits: 1, signDisplay: "always" }).format(pct);
   const period = `${s[0][0].slice(5)}.${s[0][0].slice(2, 4)}–${s[s.length-1][0].slice(5)}.${s[s.length-1][0].slice(2, 4)}`;
   return `<svg class="spark ${cls}" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">
-    <title>${period}: ${pctTxt}</title><polyline points="${pts}"/></svg>`;
+    <title>${esc(period)}: ${esc(pctTxt)}</title><polyline points="${pts}"/></svg>`;
 }
 
 function rowHtml(b, i) {
   const stale = b.assets_date && state.data.meta.report_date && b.assets_date < state.data.meta.report_date;
-  return `<tr class="bank-row ${state.openRegn === b.regn ? "open" : ""}" data-regn="${b.regn}">
+  return `<tr class="bank-row ${state.openRegn === b.regn ? "open" : ""}" data-regn="${esc(b.regn)}">
     <td class="col-idx">${i + 1}</td>
     <td class="col-bank">${anySanc(b) ? "" : '<span class="clean-mark"></span>'}${esc(bankName(b))}${b.is_nko ? `<span class="nko-suffix">${esc(t("table.nko_tag"))}</span>` : ""}</td>
-    <td class="col-regn">${b.regn}</td>
-    <td class="num">${fmtBln(b.assets)}</td>
+    <td class="col-regn">${esc(b.regn)}</td>
+    <td class="num">${esc(fmtBln(b.assets))}</td>
     <td class="col-trend">${sparklineHtml(b)}</td>
-    <td class="num">${fmtBln(b.capital)}</td>
-    <td class="col-date">${b.assets_date ? fmtMMYY(b.assets_date) : t("table.no_data")}${stale ? '<span class="stale-dot"></span>' : ""}</td>
+    <td class="num">${esc(fmtBln(b.capital))}</td>
+    <td class="col-date">${esc(b.assets_date ? fmtMMYY(b.assets_date) : t("table.no_data"))}${stale ? '<span class="stale-dot"></span>' : ""}</td>
     ${JURS.map((j) => `<td class="col-jur">${badgeHtml(b, j)}</td>`).join("")}
   </tr>`;
 }
 
 function detailHtml(b) {
+  // значения — как есть, экранируются при выводе все разом (реквизиты ЦБ — тоже данные)
   const req = [
-    ["full_name", `${esc(b.name)}${b.name_en ? " · " + esc(b.name_en) : ""}`],
+    ["full_name", b.name_en ? `${b.name} · ${b.name_en}` : b.name],
     ["regn", b.regn], ["inn", b.inn], ["ogrn", b.ogrn],
-    ["bic", b.bic], ["swift", b.swift], ["lic_type", b.lic_type],
-    ["foreign_group", b.foreign ? `${esc(b.foreign.group)} (${esc(b.foreign.country)})` : null],
-    ["address", esc(b.address)],
+    ["bic", b.bic], ["swift", b.swift], ["lic_type", licType(b.lic_type)],
+    ["foreign_group", b.foreign ? `${b.foreign.group} (${b.foreign.country})` : null],
+    ["address", b.address],
   ].filter(([, v]) => v != null && v !== "")
-   .map(([k, v]) => `<div><span class="lbl">${esc(t("detail." + k))}</span> ${v}</div>`).join("");
+   .map(([k, v]) => `<div><span class="lbl">${esc(t("detail." + k))}</span> ${esc(v)}</div>`).join("");
 
   const finParts = [];
   if (b.assets != null) finParts.push(esc(t("detail.assets_note", { date: fmtDate(b.assets_date) })));
   if (b.capital != null) finParts.push(esc(t("detail.capital_note", { date: fmtDate(b.capital_date) })));
-  if (b.ogrn) finParts.push(`<a href="https://www.cbr.ru/finorg/foinfo/?ogrn=${b.ogrn}" target="_blank" rel="noopener">${esc(t("detail.fin_source"))}</a>`);
+  if (b.ogrn) finParts.push(linkHtml(
+    "https://www.cbr.ru/finorg/foinfo/?ogrn=" + encodeURIComponent(b.ogrn), t("detail.fin_source")));
 
   let sanc;
   if (!anySanc(b)) {
@@ -313,13 +356,17 @@ function detailHtml(b) {
       const ss = b.sanctions[j];
       const entries = ss.length ? ss.map((s) => {
         const badges = s.types.map((tp) =>
-          `<span class="badge ${BADGE_COLOR[tp] || "b-amber"}">${esc(t("types." + tp + ".badge"))}</span>`).join(" ");
+          `<span class="badge ${badgeClass(tp)}">${esc(t("types." + tp + ".badge"))}</span>`).join(" ");
         const dates = Object.entries(s.dates || {}).filter(([, d]) => d)
-          .map(([tp, d]) => `${esc(t("types." + tp + ".badge"))}: ${fmtDate(d)}`).join(", ");
+          .map(([tp, d]) => `${t("types." + tp + ".badge")}: ${fmtDate(d)}`).join(", ");
+        const meta = [esc(`${t("detail.method")}: ${t("methods." + s.method)}`)];
+        if (dates) meta.push(esc(`${t("detail.designated")}: ${dates}`));
+        const link = linkHtml(s.source_url, t("detail.entry_link"));
+        if (link) meta.push(link);
+        if (s.superseded_by) meta.push(esc(t("detail.superseded")));
         return `<div class="jur-entry">${badges} ${esc(s.entry_name || s.entry_id)}
-          <span class="meta"> · ${esc(t("detail.method"))}: ${esc(t("methods." + s.method))}${dates ? ` · ${esc(t("detail.designated"))}: ${dates}` : ""}
-          · <a href="${esc(s.source_url)}" target="_blank" rel="noopener">${esc(t("detail.entry_link"))}</a>${s.superseded_by ? ` · ${esc(t("detail.superseded"))}` : ""}</span></div>`;
-      }).join("") : `<span class="meta" style="color:var(--text-secondary)">${esc(t("detail.clean_jur"))}</span>`;
+          <span class="meta"> · ${meta.join(" · ")}</span></div>`;
+      }).join("") : `<span class="meta clean-jur">${esc(t("detail.clean_jur"))}</span>`;
       return `<div class="jur-block"><span class="jur-name">${FLAGS[j]} ${j}</span>${entries}</div>`;
     }).join("");
   }
@@ -369,9 +416,10 @@ function showTooltip(el) {
   const tp = el.dataset.type;
   const date = (s.dates || {})[tp];
   const tt = $("tooltip");
+  const link = linkHtml(s.source_url, t("detail.entry_link"));
   tt.innerHTML = `<div><b>${esc(t("types." + tp + ".badge"))}</b> — ${esc(t("types." + tp + ".desc"))}</div>
-    ${date ? `<div class="tt-date">${esc(t("detail.designated"))}: ${fmtDate(date)}</div>` : ""}
-    <div><a href="${esc(s.source_url)}" target="_blank" rel="noopener">${esc(t("detail.entry_link"))}</a></div>`;
+    ${date ? `<div class="tt-date">${esc(t("detail.designated"))}: ${esc(fmtDate(date))}</div>` : ""}
+    ${link ? `<div>${link}</div>` : ""}`;
   tt.hidden = false;
   const r = el.getBoundingClientRect();
   const ttr = tt.getBoundingClientRect();
@@ -392,14 +440,14 @@ function bind() {
     const cur = e.target.closest("button")?.dataset.cur;
     if (!cur) return;
     state.currency = cur;
-    localStorage.setItem("sb_cur", cur);
+    remember("sb_cur", cur);
     render();
   });
   $("lang-seg").addEventListener("click", async (e) => {
     const lang = e.target.closest("button")?.dataset.lang;
     if (!lang) return;
     state.lang = lang;
-    localStorage.setItem("sb_lang", lang);
+    remember("sb_lang", lang);
     await loadDict();
     render();
   });
@@ -458,6 +506,7 @@ function bind() {
 
 async function loadDict() {
   const res = await fetch(`./static/i18n/${state.lang}.json`);
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
   state.dict = await res.json();
 }
 
@@ -468,12 +517,15 @@ async function init() {
   }
   try {
     const [dataRes] = await Promise.all([fetch("./dataset.json"), loadDict()]);
+    if (!dataRes.ok) throw new Error(`HTTP ${dataRes.status}`);
     state.data = await dataRes.json();
     if (!state.data.banks) throw new Error("no data");
     bind();
     render();
   } catch (err) {
-    $("statusline").textContent = "Ошибка загрузки данных: " + err.message;
+    // не загрузился и словарь — тогда хотя бы текст ошибки, без перевода
+    $("statusline").textContent = typeof state.dict.errors?.load === "string"
+      ? t("errors.load", { error: err.message }) : "⚠ " + err.message;
   }
 }
 

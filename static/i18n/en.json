@@ -3,10 +3,12 @@
  "subscribe": "Get updates",
  "status": {
   "cbr_data": "CBR data as of {date}",
+  "list_dates": "Lists as of: {dates}",
   "lists_checked": "Lists checked {date}",
-  "monitor_off": "Monitoring: off",
-  "monitor_on": "Monitoring active · until {until}",
   "assets_estimate": "assets are estimates (form 101)"
+ },
+ "errors": {
+  "load": "Failed to load data: {error}"
  },
  "cards": {
   "total": "Credit institutions",
@@ -63,6 +65,14 @@
   "sanctions_block": "Sanctions",
   "clean_jur": "none",
   "foreign_group": "Parent group"
+ },
+ "lic_types": {
+  "Банк с универсальной лицензией": "Bank with a universal licence",
+  "Банк с базовой лицензией": "Bank with a basic licence",
+  "Расчетная НКО": "Settlement NBCO",
+  "Платежная НКО": "Payment NBCO",
+  "НКО ЦК": "NBCO – central counterparty",
+  "ЦК": "Central counterparty"
  },
  "methods": {
   "bic": "by SWIFT BIC",

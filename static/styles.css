@@ -18,6 +18,9 @@
 
 * { box-sizing: border-box; }
 
+/* hidden прячет всегда: иначе display у класса (.tg-btn — inline-flex) его перебивает */
+[hidden] { display: none !important; }
+
 html { -webkit-text-size-adjust: 100%; }
 
 body {
@@ -50,7 +53,7 @@ a:hover { text-decoration: underline; }
   overflow: hidden; background: var(--surface);
 }
 .seg button {
-  border: 0; background: none; padding: 5px 10px; cursor: pointer;
+  border: 0; background: none; padding: 5px 10px; cursor: pointer; white-space: nowrap;
   font: inherit; color: var(--text-secondary); border-right: 1px solid var(--border);
 }
 .seg button:last-child { border-right: 0; }
@@ -70,8 +73,8 @@ a:hover { text-decoration: underline; }
   padding: 3px 16px; color: var(--text-secondary); font-size: 12px;
   border-bottom: 1px solid var(--border);
 }
-.statusline .dot-sep::before { content: "·"; margin: 0 2px; }
-.monitor-on { color: var(--accent); font-weight: 600; }
+/* разделитель — хвостом части: при переносе строки «·» не начинает новую строку */
+.statusline .st-part:not(:last-child)::after { content: "·"; margin: 0 2px 0 10px; }
 
 /* ── Сводные карточки ──────────────────────────────────── */
 .cards {
@@ -197,6 +200,8 @@ tr.detail-row > td {
 .jur-block .jur-name { font-weight: 600; margin-right: 6px; }
 .jur-entry { margin: 3px 0 3px 8px; }
 .jur-entry .meta { color: var(--text-secondary); font-size: 12px; }
+.clean-jur { color: var(--text-secondary); }
+.raw-url { overflow-wrap: anywhere; }
 .no-sanctions { color: var(--ok); font-weight: 600; }
 
 /* ── Подвал ────────────────────────────────────────────── */
@@ -206,9 +211,19 @@ tr.detail-row > td {
 }
 
 /* ── Узкие экраны: не разваливаться (§6) ───────────────── */
+/* Страница не шире экрана: прокручивается только таблица внутри .table-wrap.
+   minmax(0, 1fr) — колонка карточек не раздувается по самому длинному слову. */
 @media (max-width: 900px) {
-  .cards { grid-template-columns: repeat(4, 1fr); }
+  .cards { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .topbar { height: auto; flex-wrap: wrap; padding: 8px 16px; }
+  .topbar-controls { flex-wrap: wrap; }
   .controls { flex-wrap: wrap; height: auto; }
   .detail-grid { grid-template-columns: 1fr; }
+  /* детальная панель — в видимой ширине таблицы, а не во всю прокручиваемую */
+  .table-wrap { container-type: inline-size; }
+  .detail-grid { position: sticky; left: 16px; max-width: calc(100cqi - 32px); }
+}
+@media (max-width: 520px) {
+  .topbar-title { white-space: normal; }
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }

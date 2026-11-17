@@ -6778,6 +6778,19 @@
     "EU": [
      {
       "dates": {
+       "eu_swift": "2025-03-17"
+      },
+      "entry_id": "833-XIV-petersburgs-settlement-center",
+      "entry_name": "Petersburgs settlement center",
+      "method": "manual",
+      "note": "Ручной матч Reg.833/2014 Annex XIV: НКО АО ПРЦ (Петербургский расчётный центр), то же в UK RUS2723 по ИНН; аудит 2026-11-17, подтверждено модератором 2026-11-17",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02014R0833",
+      "types": [
+       "eu_swift"
+      ]
+     },
+     {
+      "dates": {
        "eu_freeze": "2026-11-16"
       },
       "entry_id": "269-2574-joint-stock-company-petersburg-settlement-centre",
@@ -9186,6 +9199,33 @@
       "types": [
        "eu_swift"
       ]
+     },
+     {
+      "dates": {
+       "eu_freeze": "2026-07-23"
+      },
+      "entry_id": "EU.14510.0",
+      "entry_name": "JSCB “NRBank”",
+      "method": "manual",
+      "note": "НРБанк: в FSF неверный ИНН 7703211482 (по карточке ЦБ 7703211512), «AO AКБ “НРБанк”» с латинскими буквами; аудит 2026-11-17, подтверждено модератором 2026-11-17",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202601845",
+      "types": [
+       "eu_freeze"
+      ]
+     },
+     {
+      "dates": {
+       "eu_freeze": "2026-07-23"
+      },
+      "entry_id": "269-1843-joint-stock-commercial-bank-national-reserve-ban",
+      "entry_name": "Joint Stock Commercial Bank “National Reserve Bank” (JSC)",
+      "method": "manual",
+      "note": "НРБанк: в акте 2026/1843 неверный ИНН 7703211482 (по карточке ЦБ 7703211512); аудит 2026-11-17, подтверждено модератором 2026-11-17",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R1843",
+      "superseded_by": "EU.14510.0",
+      "types": [
+       "eu_freeze"
+      ]
      }
     ],
     "JP": [],
@@ -9866,6 +9906,33 @@
       "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02014R0833",
       "types": [
        "eu_swift"
+      ]
+     },
+     {
+      "dates": {
+       "eu_freeze": "2026-07-23"
+      },
+      "entry_id": "EU.14480.65",
+      "entry_name": "Joint -Stock Commercial  Bank Absolut Bank",
+      "method": "manual",
+      "note": "Абсолют Банк: в FSF неверный ИНН 7703023696 (по карточке ЦБ 7736046991), название и кириллица однозначны; аудит 2026-11-17, подтверждено модератором 2026-11-17",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202601845",
+      "types": [
+       "eu_freeze"
+      ]
+     },
+     {
+      "dates": {
+       "eu_freeze": "2026-07-23"
+      },
+      "entry_id": "269-1843-joint-stock-commercial-bank-absolut-bank-public-",
+      "entry_name": "Joint Stock Commercial Bank “Absolut Bank” (Public Joint-Stock Company)",
+      "method": "manual",
+      "note": "Абсолют Банк: в акте 2026/1843 неверный ИНН 7703023696 (по карточке ЦБ 7736046991); аудит 2026-11-17, подтверждено модератором 2026-11-17",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R1843",
+      "superseded_by": "EU.14480.65",
+      "types": [
+       "eu_freeze"
       ]
      }
     ],
@@ -13166,6 +13233,19 @@
     "EU": [
      {
       "dates": {
+       "eu_swift": "2026-08-13"
+      },
+      "entry_id": "833-XIV-joint-stock-company-interprogressbank",
+      "entry_name": "Joint Stock Company Interprogressbank",
+      "method": "manual",
+      "note": "Ручной матч Reg.833/2014 Annex XIV: Банк ИПБ (Интерпрогрессбанк); аудит 2026-11-17, подтверждено модератором 2026-11-17",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02014R0833",
+      "types": [
+       "eu_swift"
+      ]
+     },
+     {
+      "dates": {
        "eu_freeze": "2026-11-16"
       },
       "entry_id": "269-2574-jsc-interprogressbank",
@@ -13661,18 +13741,6 @@
     "EU": [
      {
       "dates": {
-       "eu_freeze": "2024-02-23"
-      },
-      "entry_id": "EU.11239.35",
-      "entry_name": "JSC “Avangard” Safonovo",
-      "method": "name_exact",
-      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202400753",
-      "types": [
-       "eu_freeze"
-      ]
-     },
-     {
-      "dates": {
        "eu_freeze": "2026-07-23"
       },
       "entry_id": "EU.14516.91",
@@ -13709,59 +13777,9 @@
       ]
      }
     ],
-    "JP": [
-     {
-      "dates": {
-       "jp_freeze": "2023-05-26"
-      },
-      "entry_id": "028-000174",
-      "entry_name": "Joint Stock Company Avangard",
-      "method": "name_exact",
-      "source_url": "https://www.mof.go.jp/policy/international_policy/gaitame_kawase/gaitame/economic_sanctions/list.html",
-      "types": [
-       "jp_freeze"
-      ]
-     }
-    ],
-    "UK": [
-     {
-      "dates": {
-       "uk_freeze": "2022-05-04"
-      },
-      "entry_id": "RUS1430",
-      "entry_name": "Avangard JSC",
-      "method": "name_exact",
-      "source_url": "https://search-uk-sanctions-list.service.gov.uk/?searchTerm=RUS1430",
-      "types": [
-       "uk_freeze"
-      ]
-     },
-     {
-      "dates": {
-       "uk_freeze": "2024-11-19"
-      },
-      "entry_id": "RUS2313",
-      "entry_name": "Avangard",
-      "method": "name_exact",
-      "source_url": "https://search-uk-sanctions-list.service.gov.uk/?searchTerm=RUS2313",
-      "types": [
-       "uk_freeze"
-      ]
-     }
-    ],
+    "JP": [],
+    "UK": [],
     "US": [
-     {
-      "dates": {
-       "sdn": "2022-03-03"
-      },
-      "entry_id": "35356",
-      "entry_name": "JOINT STOCK COMPANY AVANGARD",
-      "method": "name_exact",
-      "source_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=35356",
-      "types": [
-       "sdn"
-      ]
-     },
      {
       "dates": {
        "sdn": "2024-02-23"
@@ -16661,7 +16679,21 @@
    "sanctions": {
     "EU": [],
     "JP": [],
-    "UK": [],
+    "UK": [
+     {
+      "dates": {
+       "uk_freeze": "2023-05-18"
+      },
+      "entry_id": "RUS1860",
+      "entry_name": "Russian Regional Development Bank",
+      "method": "manual",
+      "note": "ВБРР: английское название банка (то же у US 45810, сопоставлен по BIC); в записи UK нет идентификаторов; аудит 2026-11-17, подтверждено модератором 2026-11-17",
+      "source_url": "https://search-uk-sanctions-list.service.gov.uk/?searchTerm=RUS1860",
+      "types": [
+       "uk_freeze"
+      ]
+     }
+    ],
     "US": [
      {
       "dates": {
@@ -25377,32 +25409,7 @@
     "EU": [],
     "JP": [],
     "UK": [],
-    "US": [
-     {
-      "dates": {
-       "ssi": "2016-09-01"
-      },
-      "entry_id": "19690",
-      "entry_name": "DRUZHBA, AO",
-      "method": "name_exact",
-      "source_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=19690",
-      "types": [
-       "ssi"
-      ]
-     },
-     {
-      "dates": {
-       "ssi": "2017-06-20"
-      },
-      "entry_id": "22391",
-      "entry_name": "TRANSNEFT-DRUZHBA, AO",
-      "method": "name_exact",
-      "source_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=22391",
-      "types": [
-       "ssi"
-      ]
-     }
-    ]
+    "US": []
    },
    "swift": null
   },
@@ -30391,7 +30398,21 @@
      }
     ],
     "JP": [],
-    "UK": [],
+    "UK": [
+     {
+      "dates": {
+       "uk_freeze": "2022-02-22"
+      },
+      "entry_id": "RUS0233",
+      "entry_name": "Black Sea Bank for Development and Reconstruction",
+      "method": "manual",
+      "note": "ЧБРР: кириллица записи «Черноморский Банк Развития и Реконструкции»; та же организация в EU.12741.45 и US 22504 (по ИНН); аудит 2026-11-17, подтверждено модератором 2026-11-17",
+      "source_url": "https://search-uk-sanctions-list.service.gov.uk/?searchTerm=RUS0233",
+      "types": [
+       "uk_freeze"
+      ]
+     }
+    ],
     "US": [
      {
       "dates": {
@@ -33305,10 +33326,10 @@
    "USD": 83.5588,
    "date": "2026-10-01"
   },
-  "generated_at": "2026-11-17T18:00:07+00:00",
+  "generated_at": "2026-11-17T18:24:21+00:00",
   "list_dates": {
    "EU": "FSF 2026-10-23T17:05:43.888+02:00; 833/2014 02014R0833-20260724 + 1 amend.",
-   "JP": "2026-11-17T17:56:44+00:00",
+   "JP": "2026-11-17T18:21:11+00:00",
    "UK": "17/11/2026",
    "US": "11/13/2026"
   },
@@ -33316,12 +33337,12 @@
  },
  "summary": {
   "all_four": {
-   "assets_share": 0.785,
-   "count": 12
+   "assets_share": 0.7846,
+   "count": 11
   },
   "any_sanctions": {
    "assets_share": 0.9604,
-   "count": 174
+   "count": 173
   },
   "banks": 301,
   "nko": 57,
@@ -33331,16 +33352,16 @@
     "count": 154
    },
    "JP": {
-    "assets_share": 0.7854,
-    "count": 15
+    "assets_share": 0.785,
+    "count": 14
    },
    "UK": {
-    "assets_share": 0.8796,
-    "count": 46
+    "assets_share": 0.8975,
+    "count": 47
    },
    "US": {
     "assets_share": 0.9426,
-    "count": 108
+    "count": 107
    }
   },
   "recent_30d": [

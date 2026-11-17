@@ -69,7 +69,20 @@
    "reg_date": "1994-01-21",
    "regn": 2659,
    "sanctions": {
-    "EU": [],
+    "EU": [
+     {
+      "dates": {
+       "eu_freeze": "2026-11-16"
+      },
+      "entry_id": "269-2574-llc-commercial-bank-altaikapitalbank",
+      "entry_name": "LLC Commercial Bank “Altaikapitalbank”",
+      "method": "name_exact",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R2574",
+      "types": [
+       "eu_freeze"
+      ]
+     }
+    ],
     "JP": [],
     "UK": [],
     "US": []
@@ -833,7 +846,20 @@
    "reg_date": "1990-10-15",
    "regn": 478,
    "sanctions": {
-    "EU": [],
+    "EU": [
+     {
+      "dates": {
+       "eu_freeze": "2026-11-16"
+      },
+      "entry_id": "269-2574-jsc-kb-kubantorgbank",
+      "entry_name": "JSC KB Kubantorgbank",
+      "method": "name_exact",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R2574",
+      "types": [
+       "eu_freeze"
+      ]
+     }
+    ],
     "JP": [],
     "UK": [],
     "US": []
@@ -1010,6 +1036,18 @@
       "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02014R0833",
       "types": [
        "eu_swift"
+      ]
+     },
+     {
+      "dates": {
+       "eu_freeze": "2026-11-16"
+      },
+      "entry_id": "269-2574-joint-stock-investment-commercial-bank-eniseisk-",
+      "entry_name": "Joint Stock Investment Commercial Bank Eniseisk United Bank",
+      "method": "name_exact",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R2574",
+      "types": [
+       "eu_freeze"
       ]
      }
     ],
@@ -1700,7 +1738,20 @@
    "reg_date": "1990-12-26",
    "regn": 1288,
    "sanctions": {
-    "EU": [],
+    "EU": [
+     {
+      "dates": {
+       "eu_freeze": "2026-11-16"
+      },
+      "entry_id": "269-2574-pjsc-bank-stavr",
+      "entry_name": "PJSC “Bank Stavr”",
+      "method": "name_exact",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R2574",
+      "types": [
+       "eu_freeze"
+      ]
+     }
+    ],
     "JP": [],
     "UK": [
      {
@@ -2171,7 +2222,20 @@
    "reg_date": "1993-01-19",
    "regn": 903,
    "sanctions": {
-    "EU": [],
+    "EU": [
+     {
+      "dates": {
+       "eu_freeze": "2026-11-16"
+      },
+      "entry_id": "269-2574-jsc-vladbusinessbank",
+      "entry_name": "JSC Vladbusinessbank",
+      "method": "name_exact",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R2574",
+      "types": [
+       "eu_freeze"
+      ]
+     }
+    ],
     "JP": [],
     "UK": [],
     "US": []
@@ -3797,7 +3861,20 @@
    "reg_date": "1991-12-20",
    "regn": 256,
    "sanctions": {
-    "EU": [],
+    "EU": [
+     {
+      "dates": {
+       "eu_freeze": "2026-11-16"
+      },
+      "entry_id": "269-2574-jsc-guta-bank",
+      "entry_name": "JSC “GUTA-BANK”",
+      "method": "name_exact",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R2574",
+      "types": [
+       "eu_freeze"
+      ]
+     }
+    ],
     "JP": [],
     "UK": [],
     "US": [
@@ -4076,7 +4153,20 @@
    "reg_date": "1991-03-06",
    "regn": 1399,
    "sanctions": {
-    "EU": [],
+    "EU": [
+     {
+      "dates": {
+       "eu_freeze": "2026-11-16"
+      },
+      "entry_id": "269-2574-llc-bank-elita",
+      "entry_name": "LLC Bank “Elita”",
+      "method": "name_exact",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R2574",
+      "types": [
+       "eu_freeze"
+      ]
+     }
+    ],
     "JP": [],
     "UK": [],
     "US": []
@@ -4152,7 +4242,20 @@
    "reg_date": "1991-01-04",
    "regn": 1329,
    "sanctions": {
-    "EU": [],
+    "EU": [
+     {
+      "dates": {
+       "eu_freeze": "2026-11-16"
+      },
+      "entry_id": "269-2574-jsc-solid-bank",
+      "entry_name": "JSC Solid Bank",
+      "method": "name_exact",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R2574",
+      "types": [
+       "eu_freeze"
+      ]
+     }
+    ],
     "JP": [],
     "UK": [
      {
@@ -5920,7 +6023,20 @@
    "reg_date": "1990-11-20",
    "regn": 842,
    "sanctions": {
-    "EU": [],
+    "EU": [
+     {
+      "dates": {
+       "eu_freeze": "2026-11-16"
+      },
+      "entry_id": "269-2574-llc-ketovsky-commercial-bank",
+      "entry_name": "LLC Ketovsky Commercial Bank",
+      "method": "name_exact",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R2574",
+      "types": [
+       "eu_freeze"
+      ]
+     }
+    ],
     "JP": [],
     "UK": [],
     "US": []
@@ -7186,7 +7302,20 @@
    "reg_date": "1992-06-30",
    "regn": 53,
    "sanctions": {
-    "EU": [],
+    "EU": [
+     {
+      "dates": {
+       "eu_freeze": "2026-11-16"
+      },
+      "entry_id": "269-2574-pjsc-bank-aleksandrovsky",
+      "entry_name": "PJSC Bank “Aleksandrovsky”",
+      "method": "name_exact",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R2574",
+      "types": [
+       "eu_freeze"
+      ]
+     }
+    ],
     "JP": [],
     "UK": [],
     "US": [
@@ -7490,6 +7619,18 @@
       "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02014R0833",
       "types": [
        "eu_swift"
+      ]
+     },
+     {
+      "dates": {
+       "eu_freeze": "2026-11-16"
+      },
+      "entry_id": "269-2574-jsc-spb-bank",
+      "entry_name": "JSC SPB Bank",
+      "method": "name_exact",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R2574",
+      "types": [
+       "eu_freeze"
       ]
      }
     ],
@@ -9330,7 +9471,20 @@
    "reg_date": "1993-01-25",
    "regn": 2252,
    "sanctions": {
-    "EU": [],
+    "EU": [
+     {
+      "dates": {
+       "eu_freeze": "2026-11-16"
+      },
+      "entry_id": "269-2574-jscb-tender-bank",
+      "entry_name": "JSCB “Tender-Bank”",
+      "method": "name_exact",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R2574",
+      "types": [
+       "eu_freeze"
+      ]
+     }
+    ],
     "JP": [],
     "UK": [],
     "US": []
@@ -11244,6 +11398,18 @@
       "types": [
        "eu_swift"
       ]
+     },
+     {
+      "dates": {
+       "eu_freeze": "2026-11-16"
+      },
+      "entry_id": "269-2574-jsc-jscb-international-financial-club",
+      "entry_name": "JSC JSCB “International Financial Club”",
+      "method": "name_exact",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R2574",
+      "types": [
+       "eu_freeze"
+      ]
      }
     ],
     "JP": [],
@@ -11990,7 +12156,20 @@
    "reg_date": "1994-03-18",
    "regn": 2755,
    "sanctions": {
-    "EU": [],
+    "EU": [
+     {
+      "dates": {
+       "eu_freeze": "2026-11-16"
+      },
+      "entry_id": "269-2574-jsc-nk-bank",
+      "entry_name": "JSC NK Bank",
+      "method": "name_exact",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R2574",
+      "types": [
+       "eu_freeze"
+      ]
+     }
+    ],
     "JP": [],
     "UK": [],
     "US": [
@@ -12274,7 +12453,20 @@
    "reg_date": "1994-04-05",
    "regn": 2776,
    "sanctions": {
-    "EU": [],
+    "EU": [
+     {
+      "dates": {
+       "eu_freeze": "2026-11-16"
+      },
+      "entry_id": "269-2574-llc-avtotorgbank",
+      "entry_name": "LLC Avtotorgbank",
+      "method": "name_exact",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R2574",
+      "types": [
+       "eu_freeze"
+      ]
+     }
+    ],
     "JP": [],
     "UK": [],
     "US": []
@@ -12945,7 +13137,20 @@
    "reg_date": "1990-10-26",
    "regn": 600,
    "sanctions": {
-    "EU": [],
+    "EU": [
+     {
+      "dates": {
+       "eu_freeze": "2026-11-16"
+      },
+      "entry_id": "269-2574-jsc-interprogressbank",
+      "entry_name": "JSC “Interprogressbank”",
+      "method": "name_exact",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R2574",
+      "types": [
+       "eu_freeze"
+      ]
+     }
+    ],
     "JP": [],
     "UK": [],
     "US": []
@@ -13097,7 +13302,20 @@
    "reg_date": "1992-08-19",
    "regn": 77,
    "sanctions": {
-    "EU": [],
+    "EU": [
+     {
+      "dates": {
+       "eu_freeze": "2026-11-16"
+      },
+      "entry_id": "269-2574-jsc-maritime-bank",
+      "entry_name": "JSC “Maritime Bank”",
+      "method": "name_exact",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R2574",
+      "types": [
+       "eu_freeze"
+      ]
+     }
+    ],
     "JP": [],
     "UK": [],
     "US": [
@@ -14258,7 +14476,20 @@
    "reg_date": "1994-05-16",
    "regn": 2838,
    "sanctions": {
-    "EU": [],
+    "EU": [
+     {
+      "dates": {
+       "eu_freeze": "2026-11-16"
+      },
+      "entry_id": "269-2574-llc-commercial-bank-sinko-bank",
+      "entry_name": "LLC Commercial Bank “SINKO-BANK”",
+      "method": "name_exact",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R2574",
+      "types": [
+       "eu_freeze"
+      ]
+     }
+    ],
     "JP": [],
     "UK": [],
     "US": [
@@ -14503,7 +14734,20 @@
    "reg_date": "1994-06-21",
    "regn": 2905,
    "sanctions": {
-    "EU": [],
+    "EU": [
+     {
+      "dates": {
+       "eu_freeze": "2026-11-16"
+      },
+      "entry_id": "269-2574-llc-commercial-bank-kremlin",
+      "entry_name": "LLC Commercial Bank “Kremlin”",
+      "method": "name_exact",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R2574",
+      "types": [
+       "eu_freeze"
+      ]
+     }
+    ],
     "JP": [],
     "UK": [],
     "US": [
@@ -14897,7 +15141,20 @@
    "reg_date": "1994-10-11",
    "regn": 3124,
    "sanctions": {
-    "EU": [],
+    "EU": [
+     {
+      "dates": {
+       "eu_freeze": "2026-11-16"
+      },
+      "entry_id": "269-2574-jsc-ns-bank",
+      "entry_name": "JSC NS Bank",
+      "method": "name_exact",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R2574",
+      "types": [
+       "eu_freeze"
+      ]
+     }
+    ],
     "JP": [],
     "UK": [],
     "US": [
@@ -15624,7 +15881,20 @@
    "reg_date": "1996-06-24",
    "regn": 3293,
    "sanctions": {
-    "EU": [],
+    "EU": [
+     {
+      "dates": {
+       "eu_freeze": "2026-11-16"
+      },
+      "entry_id": "269-2574-llc-rusuniversalbank",
+      "entry_name": "LLC Rusuniversalbank",
+      "method": "name_exact",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R2574",
+      "types": [
+       "eu_freeze"
+      ]
+     }
+    ],
     "JP": [],
     "UK": [],
     "US": [
@@ -15713,7 +15983,20 @@
    "reg_date": "2005-07-11",
    "regn": 3099,
    "sanctions": {
-    "EU": [],
+    "EU": [
+     {
+      "dates": {
+       "eu_freeze": "2026-11-16"
+      },
+      "entry_id": "269-2574-jsc-russian-financial-corporation-bank",
+      "entry_name": "JSC “Russian Financial Corporation Bank”",
+      "method": "name_exact",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R2574",
+      "types": [
+       "eu_freeze"
+      ]
+     }
+    ],
     "JP": [
      {
       "dates": {
@@ -18138,7 +18421,20 @@
    "reg_date": "2002-04-11",
    "regn": 3403,
    "sanctions": {
-    "EU": [],
+    "EU": [
+     {
+      "dates": {
+       "eu_freeze": "2026-11-16"
+      },
+      "entry_id": "269-2574-jsc-rusnarbank",
+      "entry_name": "JSC “Rusnarbank”",
+      "method": "name_exact",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R2574",
+      "types": [
+       "eu_freeze"
+      ]
+     }
+    ],
     "JP": [],
     "UK": [],
     "US": []
@@ -18418,7 +18714,20 @@
    "reg_date": "2002-06-20",
    "regn": 3416,
    "sanctions": {
-    "EU": [],
+    "EU": [
+     {
+      "dates": {
+       "eu_freeze": "2026-11-16"
+      },
+      "entry_id": "269-2574-llc-unifondbank",
+      "entry_name": "LLC “Unifondbank”",
+      "method": "name_exact",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R2574",
+      "types": [
+       "eu_freeze"
+      ]
+     }
+    ],
     "JP": [],
     "UK": [],
     "US": []
@@ -19915,6 +20224,18 @@
       "types": [
        "eu_swift"
       ]
+     },
+     {
+      "dates": {
+       "eu_freeze": "2026-11-16"
+      },
+      "entry_id": "269-2574-jscb-agropromcredit",
+      "entry_name": "JSCB “Agropromcredit”",
+      "method": "name_exact",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R2574",
+      "types": [
+       "eu_freeze"
+      ]
      }
     ],
     "JP": [],
@@ -19992,7 +20313,20 @@
    "reg_date": "1992-10-16",
    "regn": 2119,
    "sanctions": {
-    "EU": [],
+    "EU": [
+     {
+      "dates": {
+       "eu_freeze": "2026-11-16"
+      },
+      "entry_id": "269-2574-jsc-alef-bank",
+      "entry_name": "JSC “Alef-Bank”",
+      "method": "name_exact",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R2574",
+      "types": [
+       "eu_freeze"
+      ]
+     }
+    ],
     "JP": [],
     "UK": [],
     "US": []
@@ -21138,7 +21472,20 @@
    "reg_date": "1990-11-02",
    "regn": 702,
    "sanctions": {
-    "EU": [],
+    "EU": [
+     {
+      "dates": {
+       "eu_freeze": "2026-11-16"
+      },
+      "entry_id": "269-2574-pjsc-nico-bank",
+      "entry_name": "PJSC “NICO-BANK”",
+      "method": "name_exact",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R2574",
+      "types": [
+       "eu_freeze"
+      ]
+     }
+    ],
     "JP": [],
     "UK": [],
     "US": []
@@ -21328,7 +21675,20 @@
    "reg_date": "1992-02-27",
    "regn": 1829,
    "sanctions": {
-    "EU": [],
+    "EU": [
+     {
+      "dates": {
+       "eu_freeze": "2026-11-16"
+      },
+      "entry_id": "269-2574-llc-inbank",
+      "entry_name": "LLC “Inbank”",
+      "method": "name_exact",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R2574",
+      "types": [
+       "eu_freeze"
+      ]
+     }
+    ],
     "JP": [],
     "UK": [],
     "US": []
@@ -21404,7 +21764,20 @@
    "reg_date": "1990-10-26",
    "regn": 609,
    "sanctions": {
-    "EU": [],
+    "EU": [
+     {
+      "dates": {
+       "eu_freeze": "2026-11-16"
+      },
+      "entry_id": "269-2574-pjsc-bank-kuznetsky",
+      "entry_name": "PJSC Bank Kuznetsky",
+      "method": "name_exact",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R2574",
+      "types": [
+       "eu_freeze"
+      ]
+     }
+    ],
     "JP": [],
     "UK": [],
     "US": []
@@ -22522,7 +22895,20 @@
    "reg_date": "1991-08-06",
    "regn": 106,
    "sanctions": {
-    "EU": [],
+    "EU": [
+     {
+      "dates": {
+       "eu_freeze": "2026-11-16"
+      },
+      "entry_id": "269-2574-pjsc-selmashbank",
+      "entry_name": "PJSC “Selmashbank”",
+      "method": "name_exact",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R2574",
+      "types": [
+       "eu_freeze"
+      ]
+     }
+    ],
     "JP": [],
     "UK": [],
     "US": []
@@ -22865,7 +23251,20 @@
    "reg_date": "1990-06-28",
    "regn": 330,
    "sanctions": {
-    "EU": [],
+    "EU": [
+     {
+      "dates": {
+       "eu_freeze": "2026-11-16"
+      },
+      "entry_id": "269-2574-llc-bank-saratov",
+      "entry_name": "LLC Bank “Saratov”",
+      "method": "name_exact",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R2574",
+      "types": [
+       "eu_freeze"
+      ]
+     }
+    ],
     "JP": [],
     "UK": [],
     "US": []
@@ -23208,7 +23607,20 @@
    "reg_date": "1995-02-28",
    "regn": 3223,
    "sanctions": {
-    "EU": [],
+    "EU": [
+     {
+      "dates": {
+       "eu_freeze": "2026-11-16"
+      },
+      "entry_id": "269-2574-jsc-svoi-bank-formerly-gazneftbank",
+      "entry_name": "JSC “Svoi Bank” (formerly Gazneftbank)",
+      "method": "name_exact",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R2574",
+      "types": [
+       "eu_freeze"
+      ]
+     }
+    ],
     "JP": [],
     "UK": [],
     "US": []
@@ -23386,7 +23798,20 @@
    "reg_date": "1990-11-21",
    "regn": 857,
    "sanctions": {
-    "EU": [],
+    "EU": [
+     {
+      "dates": {
+       "eu_freeze": "2026-11-16"
+      },
+      "entry_id": "269-2574-jsc-cb-dolinsk",
+      "entry_name": "JSC CB “Dolinsk”",
+      "method": "name_exact",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R2574",
+      "types": [
+       "eu_freeze"
+      ]
+     }
+    ],
     "JP": [],
     "UK": [],
     "US": []
@@ -23779,7 +24204,20 @@
    "reg_date": "1994-11-25",
    "regn": 3161,
    "sanctions": {
-    "EU": [],
+    "EU": [
+     {
+      "dates": {
+       "eu_freeze": "2026-11-16"
+      },
+      "entry_id": "269-2574-pjsc-kontur-bank",
+      "entry_name": "PJSC “Kontur.Bank”",
+      "method": "name_exact",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R2574",
+      "types": [
+       "eu_freeze"
+      ]
+     }
+    ],
     "JP": [],
     "UK": [],
     "US": []
@@ -24327,7 +24765,20 @@
    "reg_date": "1992-07-10",
    "regn": 965,
    "sanctions": {
-    "EU": [],
+    "EU": [
+     {
+      "dates": {
+       "eu_freeze": "2026-11-16"
+      },
+      "entry_id": "269-2574-jsc-pervouralskbank",
+      "entry_name": "JSC Pervouralskbank",
+      "method": "name_exact",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R2574",
+      "types": [
+       "eu_freeze"
+      ]
+     }
+    ],
     "JP": [],
     "UK": [],
     "US": []
@@ -25446,7 +25897,20 @@
    "reg_date": "1991-02-14",
    "regn": 1376,
    "sanctions": {
-    "EU": [],
+    "EU": [
+     {
+      "dates": {
+       "eu_freeze": "2026-11-16"
+      },
+      "entry_id": "269-2574-jsc-bank-snezhinskiy",
+      "entry_name": "JSC Bank “Snezhinskiy”",
+      "method": "name_exact",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R2574",
+      "types": [
+       "eu_freeze"
+      ]
+     }
+    ],
     "JP": [],
     "UK": [],
     "US": []
@@ -27046,7 +27510,20 @@
    "reg_date": "1992-03-24",
    "regn": 438,
    "sanctions": {
-    "EU": [],
+    "EU": [
+     {
+      "dates": {
+       "eu_freeze": "2026-11-16"
+      },
+      "entry_id": "269-2574-llc-kamkombank",
+      "entry_name": "LLC “Kamkombank”",
+      "method": "name_exact",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R2574",
+      "types": [
+       "eu_freeze"
+      ]
+     }
+    ],
     "JP": [],
     "UK": [],
     "US": [
@@ -27517,7 +27994,20 @@
    "reg_date": "1991-10-03",
    "regn": 1581,
    "sanctions": {
-    "EU": [],
+    "EU": [
+     {
+      "dates": {
+       "eu_freeze": "2026-11-16"
+      },
+      "entry_id": "269-2574-jsc-timer-bank",
+      "entry_name": "JSC Timer Bank",
+      "method": "name_exact",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R2574",
+      "types": [
+       "eu_freeze"
+      ]
+     }
+    ],
     "JP": [
      {
       "dates": {
@@ -28169,7 +28659,20 @@
    "reg_date": "1990-11-02",
    "regn": 708,
    "sanctions": {
-    "EU": [],
+    "EU": [
+     {
+      "dates": {
+       "eu_freeze": "2026-11-16"
+      },
+      "entry_id": "269-2574-llc-the-bank-of-kazan",
+      "entry_name": "LLC “The Bank of Kazan”",
+      "method": "name_exact",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R2574",
+      "types": [
+       "eu_freeze"
+      ]
+     }
+    ],
     "JP": [],
     "UK": [],
     "US": []
@@ -28383,6 +28886,18 @@
       "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02014R0833",
       "types": [
        "eu_swift"
+      ]
+     },
+     {
+      "dates": {
+       "eu_freeze": "2026-11-16"
+      },
+      "entry_id": "269-2574-jsc-databank",
+      "entry_name": "JSC “Databank”",
+      "method": "name_exact",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R2574",
+      "types": [
+       "eu_freeze"
       ]
      }
     ],
@@ -28956,7 +29471,20 @@
    "reg_date": "2012-08-02",
    "regn": 3510,
    "sanctions": {
-    "EU": [],
+    "EU": [
+     {
+      "dates": {
+       "eu_freeze": "2026-11-16"
+      },
+      "entry_id": "269-2574-llc-nko-yoomoney-formely-yandex-money",
+      "entry_name": "LLC NKO “YooMoney” (formely Yandex.Money)",
+      "method": "name_exact",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R2574",
+      "types": [
+       "eu_freeze"
+      ]
+     }
+    ],
     "JP": [],
     "UK": [],
     "US": []
@@ -30256,6 +30784,18 @@
       "types": [
        "eu_swift"
       ]
+     },
+     {
+      "dates": {
+       "eu_freeze": "2026-11-16"
+      },
+      "entry_id": "269-2574-jsc-bank-131",
+      "entry_name": "JSC “Bank 131”",
+      "method": "name_exact",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R2574",
+      "types": [
+       "eu_freeze"
+      ]
      }
     ],
     "JP": [],
@@ -30612,7 +31152,20 @@
    "reg_date": "2022-04-18",
    "regn": 3543,
    "sanctions": {
-    "EU": [],
+    "EU": [
+     {
+      "dates": {
+       "eu_freeze": "2026-11-16"
+      },
+      "entry_id": "269-2574-llc-bank-paygine",
+      "entry_name": "LLC Bank “Paygine”",
+      "method": "name_exact",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026R2574",
+      "types": [
+       "eu_freeze"
+      ]
+     }
+    ],
     "JP": [],
     "UK": [],
     "US": []
@@ -32662,10 +33215,10 @@
    "USD": 83.5588,
    "date": "2026-10-01"
   },
-  "generated_at": "2026-11-16T11:51:24+00:00",
+  "generated_at": "2026-11-17T03:25:50+00:00",
   "list_dates": {
    "EU": "FSF 2026-10-23T17:05:43.888+02:00; 833/2014 02014R0833-20260724 + 1 amend.",
-   "JP": "2026-11-16T11:37:22+00:00",
+   "JP": "2026-11-17T03:12:44+00:00",
    "UK": "12/11/2026",
    "US": "11/13/2026"
   },
@@ -32677,15 +33230,15 @@
    "count": 12
   },
   "any_sanctions": {
-   "assets_share": 0.9588,
-   "count": 147
+   "assets_share": 0.9604,
+   "count": 171
   },
   "banks": 301,
   "nko": 57,
   "per_jurisdiction": {
    "EU": {
-    "assets_share": 0.8821,
-    "count": 112
+    "assets_share": 0.885,
+    "count": 149
    },
    "JP": {
     "assets_share": 0.7854,
@@ -32700,7 +33253,309 @@
     "count": 108
    }
   },
-  "recent_30d": [],
+  "recent_30d": [
+   {
+    "date": "2026-11-16",
+    "jurisdiction": "EU",
+    "name": "ООО КБ \"Алтайкапиталбанк\"",
+    "regn": 2659,
+    "type": "eu_freeze"
+   },
+   {
+    "date": "2026-11-16",
+    "jurisdiction": "EU",
+    "name": "АО \"Кубаньторгбанк\"",
+    "regn": 478,
+    "type": "eu_freeze"
+   },
+   {
+    "date": "2026-11-16",
+    "jurisdiction": "EU",
+    "name": "АО АИКБ \"Енисейский объединенный банк\"",
+    "regn": 2645,
+    "type": "eu_freeze"
+   },
+   {
+    "date": "2026-11-16",
+    "jurisdiction": "EU",
+    "name": "ПАО \"Банк Ставр\"",
+    "regn": 1288,
+    "type": "eu_freeze"
+   },
+   {
+    "date": "2026-11-16",
+    "jurisdiction": "EU",
+    "name": "АО \"ВЛАДБИЗНЕСБАНК\"",
+    "regn": 903,
+    "type": "eu_freeze"
+   },
+   {
+    "date": "2026-11-16",
+    "jurisdiction": "EU",
+    "name": "АО \"ГУТА-БАНК\"",
+    "regn": 256,
+    "type": "eu_freeze"
+   },
+   {
+    "date": "2026-11-16",
+    "jurisdiction": "EU",
+    "name": "ООО банк \"Элита\"",
+    "regn": 1399,
+    "type": "eu_freeze"
+   },
+   {
+    "date": "2026-11-16",
+    "jurisdiction": "EU",
+    "name": "АО \"Солид Банк\"",
+    "regn": 1329,
+    "type": "eu_freeze"
+   },
+   {
+    "date": "2026-11-16",
+    "jurisdiction": "EU",
+    "name": "ООО КБ \"Кетовский\"",
+    "regn": 842,
+    "type": "eu_freeze"
+   },
+   {
+    "date": "2026-11-16",
+    "jurisdiction": "EU",
+    "name": "ПАО Банк \"АЛЕКСАНДРОВСКИЙ\"",
+    "regn": 53,
+    "type": "eu_freeze"
+   },
+   {
+    "date": "2026-11-16",
+    "jurisdiction": "EU",
+    "name": "АО \"СПБ Банк\"",
+    "regn": 435,
+    "type": "eu_freeze"
+   },
+   {
+    "date": "2026-11-16",
+    "jurisdiction": "EU",
+    "name": "АКБ \"ТЕНДЕР-БАНК\" (АО)",
+    "regn": 2252,
+    "type": "eu_freeze"
+   },
+   {
+    "date": "2026-11-16",
+    "jurisdiction": "EU",
+    "name": "АО АКБ \"МЕЖДУНАРОДНЫЙ ФИНАНСОВЫЙ КЛУБ\"",
+    "regn": 2618,
+    "type": "eu_freeze"
+   },
+   {
+    "date": "2026-11-16",
+    "jurisdiction": "EU",
+    "name": "АО \"НК Банк\"",
+    "regn": 2755,
+    "type": "eu_freeze"
+   },
+   {
+    "date": "2026-11-16",
+    "jurisdiction": "EU",
+    "name": "ООО \"АТБ\" Банк",
+    "regn": 2776,
+    "type": "eu_freeze"
+   },
+   {
+    "date": "2026-11-16",
+    "jurisdiction": "EU",
+    "name": "Банк ИПБ (АО)",
+    "regn": 600,
+    "type": "eu_freeze"
+   },
+   {
+    "date": "2026-11-16",
+    "jurisdiction": "EU",
+    "name": "МОРСКОЙ БАНК (АО)",
+    "regn": 77,
+    "type": "eu_freeze"
+   },
+   {
+    "date": "2026-11-16",
+    "jurisdiction": "EU",
+    "name": "ООО КБ \"СИНКО-БАНК\"",
+    "regn": 2838,
+    "type": "eu_freeze"
+   },
+   {
+    "date": "2026-11-16",
+    "jurisdiction": "EU",
+    "name": "\"Банк Кремлевский\" ООО",
+    "regn": 2905,
+    "type": "eu_freeze"
+   },
+   {
+    "date": "2026-11-16",
+    "jurisdiction": "EU",
+    "name": "АО \"НС Банк\"",
+    "regn": 3124,
+    "type": "eu_freeze"
+   },
+   {
+    "date": "2026-11-16",
+    "jurisdiction": "EU",
+    "name": "\"Русьуниверсалбанк\" (ООО)",
+    "regn": 3293,
+    "type": "eu_freeze"
+   },
+   {
+    "date": "2026-11-16",
+    "jurisdiction": "EU",
+    "name": "АО \"РФК-банк\"",
+    "regn": 3099,
+    "type": "eu_freeze"
+   },
+   {
+    "date": "2026-11-16",
+    "jurisdiction": "EU",
+    "name": "АО КБ \"РУСНАРБАНК\"",
+    "regn": 3403,
+    "type": "eu_freeze"
+   },
+   {
+    "date": "2026-11-16",
+    "jurisdiction": "EU",
+    "name": "ООО \"Унифондбанк\"",
+    "regn": 3416,
+    "type": "eu_freeze"
+   },
+   {
+    "date": "2026-11-16",
+    "jurisdiction": "EU",
+    "name": "АО КБ \"АГРОПРОМКРЕДИТ\"",
+    "regn": 2880,
+    "type": "eu_freeze"
+   },
+   {
+    "date": "2026-11-16",
+    "jurisdiction": "EU",
+    "name": "АО АКБ \"Алеф-Банк\"",
+    "regn": 2119,
+    "type": "eu_freeze"
+   },
+   {
+    "date": "2026-11-16",
+    "jurisdiction": "EU",
+    "name": "ПАО \"НИКО-БАНК\"",
+    "regn": 702,
+    "type": "eu_freeze"
+   },
+   {
+    "date": "2026-11-16",
+    "jurisdiction": "EU",
+    "name": "ООО \"Инбанк\"",
+    "regn": 1829,
+    "type": "eu_freeze"
+   },
+   {
+    "date": "2026-11-16",
+    "jurisdiction": "EU",
+    "name": "ПАО Банк \"Кузнецкий\"",
+    "regn": 609,
+    "type": "eu_freeze"
+   },
+   {
+    "date": "2026-11-16",
+    "jurisdiction": "EU",
+    "name": "ПАО КБ \"Сельмашбанк\"",
+    "regn": 106,
+    "type": "eu_freeze"
+   },
+   {
+    "date": "2026-11-16",
+    "jurisdiction": "EU",
+    "name": "ООО Банк \"Саратов\"",
+    "regn": 330,
+    "type": "eu_freeze"
+   },
+   {
+    "date": "2026-11-16",
+    "jurisdiction": "EU",
+    "name": "АО \"Свой Банк\"",
+    "regn": 3223,
+    "type": "eu_freeze"
+   },
+   {
+    "date": "2026-11-16",
+    "jurisdiction": "EU",
+    "name": "КБ \"Долинск\" (АО)",
+    "regn": 857,
+    "type": "eu_freeze"
+   },
+   {
+    "date": "2026-11-16",
+    "jurisdiction": "EU",
+    "name": "ПАО \"Контур.Банк\"",
+    "regn": 3161,
+    "type": "eu_freeze"
+   },
+   {
+    "date": "2026-11-16",
+    "jurisdiction": "EU",
+    "name": "АО \"ПЕРВОУРАЛЬСКБАНК\"",
+    "regn": 965,
+    "type": "eu_freeze"
+   },
+   {
+    "date": "2026-11-16",
+    "jurisdiction": "EU",
+    "name": "Банк \"Снежинский\" АО",
+    "regn": 1376,
+    "type": "eu_freeze"
+   },
+   {
+    "date": "2026-11-16",
+    "jurisdiction": "EU",
+    "name": "ООО \"Камкомбанк\"",
+    "regn": 438,
+    "type": "eu_freeze"
+   },
+   {
+    "date": "2026-11-16",
+    "jurisdiction": "EU",
+    "name": "АО \"Тимер Банк\"",
+    "regn": 1581,
+    "type": "eu_freeze"
+   },
+   {
+    "date": "2026-11-16",
+    "jurisdiction": "EU",
+    "name": "ООО КБЭР \"Банк Казани\"",
+    "regn": 708,
+    "type": "eu_freeze"
+   },
+   {
+    "date": "2026-11-16",
+    "jurisdiction": "EU",
+    "name": "АО \"Датабанк\"",
+    "regn": 646,
+    "type": "eu_freeze"
+   },
+   {
+    "date": "2026-11-16",
+    "jurisdiction": "EU",
+    "name": "ООО НКО \"ЮМани\"",
+    "regn": 3510,
+    "type": "eu_freeze"
+   },
+   {
+    "date": "2026-11-16",
+    "jurisdiction": "EU",
+    "name": "АО \"Банк 131\"",
+    "regn": 3538,
+    "type": "eu_freeze"
+   },
+   {
+    "date": "2026-11-16",
+    "jurisdiction": "EU",
+    "name": "ООО Банк \"Пэйджин\"",
+    "regn": 3543,
+    "type": "eu_freeze"
+   }
+  ],
   "total": 358
  }
 }

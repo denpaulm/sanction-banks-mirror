@@ -393,7 +393,7 @@
        "eu_freeze": "2026-07-23"
       },
       "entry_id": "EU.14713.15",
-      "entry_name": "Banca Socială Comercială Regională Siberiană S.R.L.",
+      "entry_name": "LLC Sibsotsbank",
       "method": "inn",
       "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202601845",
       "types": [
@@ -622,7 +622,7 @@
        "eu_freeze": "2026-07-23"
       },
       "entry_id": "EU.14554.66",
-      "entry_name": "Banca Yug-invest, societate publică pe acțiuni",
+      "entry_name": "PJSC Yug-invest Bank",
       "method": "inn",
       "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202601845",
       "types": [
@@ -2317,7 +2317,7 @@
        "eu_freeze": "2026-07-23"
       },
       "entry_id": "EU.14555.65",
-      "entry_name": "Bank rozwoju produkcji sprzętu do wydobywania i przerobu ropy naftowej i gazu, przemysłu stoczniowego i budownictwa (spółka akcyjna)",
+      "entry_name": "Development Bank of production of oil and gas extractive equipment, conversion, shipbuilding and construction (joint stock company)",
       "method": "name_exact",
       "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202601845",
       "types": [
@@ -2432,7 +2432,7 @@
        "eu_freeze": "2026-07-23"
       },
       "entry_id": "EU.14524.62",
-      "entry_name": "JSC SGB Bank",
+      "entry_name": "JSC Severgazbank",
       "method": "inn",
       "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202601845",
       "types": [
@@ -4514,7 +4514,7 @@
        "eu_freeze": "2026-07-23"
       },
       "entry_id": "EU.17619.61",
-      "entry_name": "JSC Uglemetbank",
+      "entry_name": "JSC Coalmetbank",
       "method": "inn",
       "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202601845",
       "types": [
@@ -5558,7 +5558,7 @@
        "eu_freeze": "2022-04-08"
       },
       "entry_id": "EU.8058.21",
-      "entry_name": "Banque  VTB",
+      "entry_name": "VTB Bank",
       "method": "inn",
       "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ%3AL_202500527&qid=1742218670627",
       "types": [
@@ -5838,7 +5838,7 @@
        "eu_freeze": "2026-07-23"
       },
       "entry_id": "EU.14515.92",
-      "entry_name": "JSC komercinis bankas Solidarnost",
+      "entry_name": "JSC Commercial Bank Solidarnost",
       "method": "inn",
       "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202601845",
       "types": [
@@ -6588,7 +6588,7 @@
        "eu_freeze": "2022-02-23"
       },
       "entry_id": "EU.7394.37",
-      "entry_name": "Bank Rossija",
+      "entry_name": "Banco Rossiya",
       "method": "inn",
       "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ%3AL_202500527&qid=1742218670627",
       "types": [
@@ -6921,7 +6921,7 @@
        "eu_freeze": "2026-07-23"
       },
       "entry_id": "EU.14509.22",
-      "entry_name": "PJSC nacionalinis bankas TRUST",
+      "entry_name": "PJSC National Bank “TRUST”",
       "method": "inn",
       "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202601845",
       "types": [
@@ -8999,7 +8999,7 @@
        "eu_freeze": "2022-12-16"
       },
       "entry_id": "EU.9354.40",
-      "entry_name": "BANQUE  DE CRÉDIT DE  MOSCOU",
+      "entry_name": "CREDIT BANK OF MOSCOW",
       "method": "inn",
       "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32023R1765",
       "types": [
@@ -9217,7 +9217,7 @@
        "eu_freeze": "2026-07-23"
       },
       "entry_id": "EU.14510.0",
-      "entry_name": "akcinis  komercinis bankas „Nacionalinis rezervų bankas (JSC)",
+      "entry_name": "Joint Stock Commercial Bank “National Reserve Bank” (JSC)",
       "method": "manual",
       "note": "НРБанк: в FSF неверный ИНН 7703211482 (по карточке ЦБ 7703211512), «AO AКБ “НРБанк”» с латинскими буквами; аудит 2026-11-17, подтверждено модератором 2026-11-17",
       "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202601845",
@@ -10850,7 +10850,7 @@
        "eu_freeze": "2026-07-23"
       },
       "entry_id": "EU.14534.31",
-      "entry_name": "Genbank S.A",
+      "entry_name": "JSC Genbank",
       "method": "inn",
       "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202601845",
       "types": [
@@ -14408,7 +14408,7 @@
        "eu_freeze": "2022-02-23"
       },
       "entry_id": "EU.7395.36",
-      "entry_name": "PROMSVJAZBANK",
+      "entry_name": "PROMSVYAZBANK",
       "method": "inn",
       "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202402455",
       "types": [
@@ -16890,7 +16890,7 @@
        "eu_freeze": "2022-06-03"
       },
       "entry_id": "EU.8373.88",
-      "entry_name": "National Settlement Depository (NSD)",
+      "entry_name": "Národný  zúčtovací depozitár, NSD",
       "method": "inn",
       "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32022R0878&from=EN",
       "types": [
@@ -17689,7 +17689,7 @@
        "eu_freeze": "2026-07-23"
       },
       "entry_id": "EU.14483.62",
-      "entry_name": "JSC Rosselkhozbank",
+      "entry_name": "JSC Russian  Agricultural Bank",
       "method": "inn",
       "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202601845",
       "types": [
@@ -18183,7 +18183,7 @@
        "eu_freeze": "2026-07-23"
       },
       "entry_id": "EU.14526.60",
-      "entry_name": "JSC “Bank Finservice”",
+      "entry_name": "Banca Finservice S.A.",
       "method": "inn",
       "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202601845",
       "types": [
@@ -25884,7 +25884,7 @@
        "eu_freeze": "2026-07-23"
       },
       "entry_id": "EU.14710.18",
-      "entry_name": "JSC Bank “KUB”",
+      "entry_name": "Joint Stock Company “Credit Ural Bank”",
       "method": "inn",
       "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202601845",
       "types": [
@@ -28559,7 +28559,7 @@
        "eu_freeze": "2026-07-23"
       },
       "entry_id": "EU.14708.41",
-      "entry_name": "Banca pentru Dezvoltare Socială din Tatarstan Tatsotsbank S.A.",
+      "entry_name": "JSC Tatsotsbank",
       "method": "inn",
       "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202601845",
       "types": [
@@ -30089,7 +30089,7 @@
        "eu_freeze": "2026-07-23"
       },
       "entry_id": "EU.14698.44",
-      "entry_name": "Non-Banking financial company “Mobile card” Limited",
+      "entry_name": "niebedąca bankiem instytucja finansowa „Mobile Card” Limited",
       "method": "inn",
       "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202601845",
       "types": [
@@ -30543,7 +30543,7 @@
        "eu_freeze": "2023-06-23"
       },
       "entry_id": "EU.10350.3",
-      "entry_name": "Banca «Centre for International Settlements» SRL",
+      "entry_name": "Bank „Centrum Rozrachunków Międzynarodowych” sp.  z o. o.",
       "method": "inn",
       "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32023R1216",
       "types": [
@@ -33443,15 +33443,15 @@
    "USD": 80.5573,
    "date": "2026-10-31"
   },
-  "generated_at": "2026-11-27T09:03:32+00:00",
+  "generated_at": "2026-11-27T09:13:20+00:00",
   "list_dates": {
-   "EU": "FSF 2026-11-26T15:13:02.649+01:00; 833/2014 02014R0833-20260724 + 2 amend.",
+   "EU": "FSF 2026-11-27T09:52:33.411+01:00; 833/2014 02014R0833-20260724 + 2 amend.",
    "JP": "2026-11-20",
    "UK": "26/11/2026",
    "US": "11/23/2026"
   },
   "list_dates_iso": {
-   "EU": "2026-11-26",
+   "EU": "2026-11-27",
    "JP": "2026-11-20",
    "UK": "2026-11-26",
    "US": "2026-11-23"
